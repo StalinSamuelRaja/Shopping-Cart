@@ -1,0 +1,104 @@
+.dark {
+  background-color: #1e1e1e;
+  height: 300px;
+}
+
+.dark-bottom {
+  background-color: #1e1e1e;
+  height: 100px;
+}
+
+.descp {
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+
+.desc {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(224, 208, 208);
+}
+
+.desc-bottom {
+  text-align: center;
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.btn-outline-dark:hover {
+  color: white;
+  background-color: #343a40;
+}
+
+.in-cart-badge {
+  color: black;
+  transition: color 0.2s;
+}
+
+.btn-outline-dark:hover .in-cart-badge {
+  color: white;
+}
+
+.badge-custom {
+  width: 50px;
+  height: 20px;
+}
+.badge-right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.btn {
+  border: 1px solid black;
+}
+
+/* Define responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a max width of 768px (e.g., tablets) */
+  .dark {
+    height: 200px;
+  }
+
+  .dark-bottom {
+    height: 80px;
+  }
+
+  .descp {
+    padding-top: 80px;
+  }
+
+  .desc {
+    padding-top: 20px;
+  }
+
+  .desc-bottom {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for screens with a max width of 576px (e.g., smartphones) */
+  .dark {
+    height: 150px;
+  }
+
+  .dark-bottom {
+    height: 60px;
+  }
+
+  .descp {
+    padding-top: 60px;
+  }
+
+  .desc {
+    padding-top: 10px;
+  }
+
+  .desc-bottom {
+    padding-top: 20px;
+  }
+}
