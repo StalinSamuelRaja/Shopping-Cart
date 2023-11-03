@@ -5,4 +5,4 @@ This app please have a product details and add and remove card informations once
 npm run dev
 `
 
-[live site]()
+[live site](https://sparkling-bubblegum-88667b.netlify.app/)
