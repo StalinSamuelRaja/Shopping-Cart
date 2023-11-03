@@ -53,7 +53,7 @@ function App() {
       prodImage:
         "https://5.imimg.com/data5/SELLER/Default/2022/7/VH/MZ/EO/147269785/ad131-fi-captainsblue04-1500x-1000x1000.jpg",
       prodName: "Airpod CAP Edition",
-      prodPrice: "$120.00 - $280.00",
+      prodPrice: "$40.00 - $80.00",
     },
     {
       prodImage:
