@@ -19,29 +19,29 @@ function ProductCard({ prodImg, prodName, prodPrice, inCart, setInCart, index, i
   const starLess = [1, 3, 5, 6].includes(index + 1);
 
   return (
-    <div className="card mb-4 mt-5" style={{ width: "300px",height:"500px" }}>
+    <div className="card mb-4 mt-5" style={{ maxWidth: "18rem" }}>
       {isOnSale && isSpecialCard && (
         <span className="badge text-bg-success badge-right">Sale</span>
       )}
-      <img src={prodImg} className="card-img-top" alt="Product" style={{ objectFit:"contain"}}/>
+      <img src={prodImg} className="card-img-top" alt="Product" style={{ objectFit: "contain" }} />
       <div className="card-body text-center">
         <h5 className="card-title">{prodName}</h5>
         <h6>
-        {starCard && (
+          {starCard && (
             <>
-              <br />
-              <span style={{ color: "#FFD700" }}><h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4></span> {/* 5-star rating */}
-            </>  
-          )}   
-        {/* {(<br></br>)} */}
-          </h6>
+              <span style={{ color: "#FFD700" }}>
+                <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+              </span> {/* 5-star rating */}
+            </>
+          )}
+        </h6>
         <p className="card-text">
           {prodPrice}
           {starLess && (
             <>
-             <h1><br></br></h1>
-            </>  
-          )}  
+              <h1><br /></h1>
+            </>
+          )}
         </p>
         {show ? (
           <button className="btn btn-outline-secondary" onClick={handleAdd}>

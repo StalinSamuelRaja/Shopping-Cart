@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProductCard from "./Product";
-
+import "./App.css"; 
 
 function App() {
   const data = [
@@ -13,7 +13,7 @@ function App() {
     {
       prodImage:
         "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/04-3_4d25c9f2-23f5-49f5-ab25-534b0e4302a0_3000x.jpg?v=1673002743",
-      prodName: "Wonder Woman DC Edition",
+      prodName: "WonderWoman DC Edition",
       prodPrice: (
         <>
           <del style={{ textDecoration: "line-through",opacity:"0.5" }}>$20.00</del>{" "}
@@ -84,7 +84,7 @@ function App() {
 
   return (
     <div className="app">
-       <nav class="navbar navbar-expand-lg bg-body-tertiary pl-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary pl-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             Shopping Cart
@@ -145,7 +145,7 @@ function App() {
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <button class="btn btn-dark" type="submit">
+            <button class="btn btn-outline-dark" type="submit">
                 &#128722; Cart
                 <span class="badge badge-light in-cart-badge">{inCart}</span>
               </button>
@@ -162,7 +162,7 @@ function App() {
       <div className="container">
         <div className="row">
           {product?.map((prod, idx) => (
-            <div className="col-md-6 col-lg-3 col-6" key={idx}>
+            <div className="col-6 col-md-6 col-lg-3" key={idx}>
               <ProductCard
                 prodImg={prod.prodImage}
                 prodName={prod.prodName}
