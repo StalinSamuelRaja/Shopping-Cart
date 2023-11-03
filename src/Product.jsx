@@ -39,7 +39,7 @@ function ProductCard({ prodImg, prodName, prodPrice, inCart, setInCart, index, i
           {prodPrice}
           {starLess && (
             <>
-              <h2><br /></h2>
+              <h2><br/></h2>
             </>
           )}
         </p>
